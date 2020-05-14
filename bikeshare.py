@@ -37,7 +37,7 @@ def get_filters():
             if month not in range(1,13):
                 raise ValueError
             break
-        except (ValueError, NameError):
+        except ValueError:
             print("Oops! That was not a valid month. Read carefully! Try again...")
 
     # Get user input for day of week (all, monday, tuesday, ... sunday)
@@ -47,7 +47,7 @@ def get_filters():
             if day not in range(1,8):
                 raise ValueError
             break
-        except (ValueError, NameError):
+        except ValueError:
             print("Oops! That was not a valid day. Read carefully! Try again...")
 
     print('-'*40)
@@ -165,8 +165,7 @@ def user_stats(df,isWashington):
 
     # Display counts of user types
     count_user_types = df.groupby('User Type')['User Type'].count()
-    print('The count of user types is: ')
-    print(count_user_types)
+    print('The count of user types is: {}'.format(count_user_types))
     print('-'*40)
 
     if isWashington != True:
@@ -212,14 +211,13 @@ def display_data(df):
             else:
                 raise ValueError
             print("-"*40,show_data)
-        except (ValueError, NameError):
+        except ValueError:
             print("Oops! That was not a 1 (yes) or a 0 (no). Read carefully, WTH? Try again...")
         finally:
             is_first_time = False if count_plus_5 > 5 else True
             
     print('-'*40)
-    
-    
+
 
 def main():
     '''

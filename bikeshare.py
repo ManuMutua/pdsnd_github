@@ -112,7 +112,6 @@ def station_stats(df):
     """
     Displays statistics on the most popular stations and trip.
     """
-
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
@@ -138,7 +137,6 @@ def trip_duration_stats(df):
     """
     Displays statistics on the total and average trip duration.
     """
-
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
@@ -159,7 +157,6 @@ def user_stats(df,isWashington):
     """
     Displays statistics on bikeshare users.
     """
-
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 

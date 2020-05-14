@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on Wednesday 13/05/2020.
 
-### Project Title
-Replace the Project Title
+### Bikeshare project
 
 ### Description
-Describe what your project is about and what it does
+We ask the user to enter a city, month and a day for the year 2017 and we provide basic stats.
 
 ### Files used
-Include the files used
+The files used are:
+	- chicago.csv
+	- new_york_city.csv
+	- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+[Udacity](https://github.com/udacity/pdsnd_github)
+[StackOverFlow](https://stackoverflow.com)
